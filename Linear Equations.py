@@ -46,3 +46,25 @@ plt.axvline()
 plt.annotate('x-intercept',(1.333, 0))
 plt.annotate('y-intercept',(0,-2))
 plt.show()
+
+
+#Showing the slope
+plt.plot(df.x, df.y, color="grey")
+plt.xlabel('x')
+plt.ylabel('y')
+plt.grid()
+plt.axhline()
+plt.axvline()
+
+# set the slope
+m = 1.5
+
+# get the y-intercept
+yInt = -2
+
+# plot the slope from the y-intercept for 1x
+mx = [0, 1]
+my = [yInt, yInt + m]
+plt.plot(mx,my, color='red', lw=5)
+
+plt.show()
