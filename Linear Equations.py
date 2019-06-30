@@ -32,3 +32,17 @@ plt.grid()
 plt.axhline()
 plt.axvline()
 plt.show()
+
+
+#Annotating the graph
+plt.plot(df.x, df.y, color="grey")
+plt.xlabel('x')
+plt.ylabel('y')
+plt.grid()
+
+## add axis lines for 0,0
+plt.axhline()
+plt.axvline()
+plt.annotate('x-intercept',(1.333, 0))
+plt.annotate('y-intercept',(0,-2))
+plt.show()
