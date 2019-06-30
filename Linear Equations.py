@@ -1,3 +1,4 @@
+#DATAFRAME
 import pandas as pd
 
 # Create a dataframe with an x column containing values from -10 to 10
@@ -11,7 +12,7 @@ df
 
 
 
-#display in graph
+#DISPLAY IN GRAPH
 %matplotlib inline
 from matplotlib import pyplot as plt
 
@@ -22,7 +23,7 @@ plt.grid()
 plt.show()
 
 
-#Intercepts
+#INTERCEPTS
 plt.plot(df.x, df.y, color="grey")
 plt.xlabel('x')
 plt.ylabel('y')
@@ -34,7 +35,7 @@ plt.axvline()
 plt.show()
 
 
-#Annotating the graph
+#ANNOTATING THE GRAPH
 plt.plot(df.x, df.y, color="grey")
 plt.xlabel('x')
 plt.ylabel('y')
@@ -48,7 +49,7 @@ plt.annotate('y-intercept',(0,-2))
 plt.show()
 
 
-#Showing the slope
+#SHOWING THE SLOPE
 plt.plot(df.x, df.y, color="grey")
 plt.xlabel('x')
 plt.ylabel('y')
