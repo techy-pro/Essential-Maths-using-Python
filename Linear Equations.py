@@ -8,3 +8,27 @@ df['y'] = (3*df['x'] - 4) / 2
 
 #Display the dataframe
 df
+
+
+
+#display in graph
+%matplotlib inline
+from matplotlib import pyplot as plt
+
+plt.plot(df.x, df.y, color="grey", marker = "o")
+plt.xlabel('x')
+plt.ylabel('y')
+plt.grid()
+plt.show()
+
+
+#Intercepts
+plt.plot(df.x, df.y, color="grey")
+plt.xlabel('x')
+plt.ylabel('y')
+plt.grid()
+
+## add axis lines for 0,0
+plt.axhline()
+plt.axvline()
+plt.show()
